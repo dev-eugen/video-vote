@@ -26,8 +26,8 @@
 
                     <div class="flex items-center justify-between mt-3">
                         <button type="button"
-                            class=" inline-flex mr-2 items-center w-[50px] h-[50px] p-3 border flex   font-semibold justify-center border-transparent rounded-md shadow-sm text-white bg-black">
-                            {{index + 1}}
+                            class=" inline-flex mr-2 items-center w-auto  h-[50px] px-3 border flex  whitespace-nowrap font-semibold justify-center border-transparent rounded-md shadow-sm text-white bg-black">
+                            {{' ' + (index + 1) + ' ' + video.description + ' '}} 
                         </button>
                         <div @click="select(index)" class="w-full">
                             <button v-if="!video.select" type="button"
@@ -53,7 +53,7 @@
             <div class="w-full flex items-center justify-center px-5">
                 <button @click="send()" type="button"
                     class="inline-flex items-center h-[50px] w-full justify-center border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-500 hover:bg-blue-600">
-                    Отправить
+                    Проголосовать
                 </button>
             </div>
         </div>

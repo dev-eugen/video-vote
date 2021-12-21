@@ -4,6 +4,7 @@ import { getDatabase, ref, update, onValue, set, push, remove } from "https://ww
 const app = Vue.createApp({
   data() {
     return { 
+      isLoad: true,
       new_user: {
         bio: '',
         email: ''
@@ -11,46 +12,46 @@ const app = Vue.createApp({
       votes:  [
         {
           id: 1,
-          //name: 'Николаев НГ',
+          name: 'Николаевский филиал',
           votes: 0
         },
         {
-          //name: 'Полцуктава',
+          name: 'Полтавский филиал',
           id: 2,
           votes: 0
         },
         {
-          //name: 'Фронт офис',
+          name: ' Фронт-офис',
           id: 3,
           votes: 0
         },
         {
-          //name: 'Полцукцукцкутава',
+          name: ' Днепровский филиал',
           id: 4,
           votes: 0
         },
         {
-          //name: 'Полцукцтава',
+          name: 'Запорожский филиал',
           id: 5,
           votes: 0
         },
         {
-          //name: 'По тава',
+          name: 'Ивано-Франковский филиал',
           id: 6,
           votes: 0
         },
         {
-          //name: 'Полтава',
+          name: 'Харьковский филиал',
           id: 7,
           votes: 0
         },
         {
-          //name: 'Полтава',
+          name: 'ТОМО',
           id: 8,
           votes: 0
         },
         {
-          //name: 'KF 2022',
+          name: 'Киевский филиал',
           id: 9,
           votes: 0
         }
@@ -62,15 +63,15 @@ const app = Vue.createApp({
     delete_user(k){
       const starCountRef = ref(database, `users/${k}`)
       remove(starCountRef)
+      this.isLoad = true
+      document.location.reload()
     },
-    add_user() {  
-      const starCountRef = ref(database, 'users')
-      const newUserRef = push(starCountRef)
-      set(newUserRef, { ...this.new_user, votes: [0, 0, 0], isVoted: false})
-      this.new_user = {
-        bio: '',
-        email: ''
-      }
+    async add_user() {   
+        const starCountRef = ref(database, 'users')
+        const newUserRef = push(starCountRef) 
+        set(newUserRef, { ...this.new_user, votes: [0, 0, 0], isVoted: false}) 
+        this.isLoad = true
+        document.location.reload()
     }
   },
   async mounted() {
@@ -78,7 +79,7 @@ const app = Vue.createApp({
     onValue(starCountRef, async (snapshot) => {
       const data = snapshot.val()
       this.users = data
-      const  arr_uses = Object.keys(data).map((key) => data[key]);
+      const  arr_uses = Object.keys(data).map((key) => data[key])
       console.log(arr_uses);
       this.votes.forEach(v => {
         arr_uses.forEach(user => {
@@ -87,6 +88,7 @@ const app = Vue.createApp({
           }
         })
       })
+      this.isLoad = false
 
     }) 
   },

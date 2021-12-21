@@ -17,47 +17,56 @@ const app = Vue.createApp({
                               style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
                       </div>
                   </div>`,
-          select: false
+          select: false,
+          description: 'Николаевский филиал'
         },
         {
           id: 2,
           video: `<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_s4ld3tburh popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'Полтавский филиал'
         },
         {
           id: 3,
           video: `<div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_2nqfk7b8sk popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'Фронт-офис'
         },
         {
           id: 4,
           video: `<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_14ovh4uw0r popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: ' Днепровский филиал'
         }, 
         {
           id: 5,
           video: `<div class="wistia_responsive_padding" style="padding:177.92% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_h6e0oytvqp popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'Запорожский филиал'
         }, 
         {
           id: 6,
           video: `<div class="wistia_responsive_padding" style="padding:178.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_qxqhpevdme popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'Ивано-Франковский филиал'
         }, 
         {
           id: 7,
           video: `<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_653lyb1tb3 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'Харьковский филиал'
         }, 
         {
           id: 8,
           video: `<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_04wfg33j75 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'ТОМО'
         }, 
         {
           id: 9,
           video: `<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_l04rp2mazy popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
-          select: false
+          select: false,
+          description: 'Киевский филиал'
         }, 
         
       ]
