@@ -64,6 +64,11 @@ const app = Vue.createApp({
           name: 'Инженерный отдел',
           id: 11,
           votes: 0
+        },
+        {
+          name: 'Львовский филиал',
+          id: 12,
+          votes: 0
         }
       ],
         users: [ ]

@@ -80,6 +80,12 @@ const app = Vue.createApp({
           select: false,
           description: 'Инженерный отдел'
         }, 
+        {
+          id: 12,
+          video: `<div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_tjdm5a1whw popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
+          select: false,
+          description: 'Львовский филиал'
+        }, 
         
       ]
     }
