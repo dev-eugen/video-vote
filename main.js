@@ -68,6 +68,18 @@ const app = Vue.createApp({
           select: false,
           description: 'Киевский филиал'
         }, 
+        {
+          id: 10,
+          video: `<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_1ipr6bqaza popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
+          select: false,
+          description: 'Одесский филиал'
+        }, 
+        {
+          id: 11,
+          video: `<div class="wistia_responsive_padding" style="padding:100.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_mhslc1vr8u popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>`,
+          select: false,
+          description: 'Инженерный отдел'
+        }, 
         
       ]
     }
