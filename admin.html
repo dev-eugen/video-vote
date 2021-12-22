@@ -80,12 +80,16 @@
                         </th>
                         <th scope="col"
                           class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          Голоса
+                        </th>
+                        <th scope="col"
+                          class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                            
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="(u, uIdx) in users" :key="uIdx">
+                      <tr v-for="(u, uIdx) in users" :key="uIdx" :class="u.votes[0] != 0 ? 'bg-green-50' : ''">
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                           {{ u.bio }}
                         </td>
@@ -94,6 +98,9 @@
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           https://2022.euroizol.ua/?token={{ uIdx }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {{u.votes}}
                         </td>
                         <td  class="px-6 py-4 whitespace-nowrap text-right cursor-pointer text-sm font-medium ">
                           <button type="button" @click="delete_user(uIdx)" class="text-red-600 hover:underline hover:text-red-900">Удалить</button>
