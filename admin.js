@@ -71,7 +71,8 @@ const app = Vue.createApp({
           votes: 0
         }
       ],
-        users: [ ]
+        users: [ ],
+        arr_users: [ ]
     }
   },
   methods: { 
@@ -95,6 +96,7 @@ const app = Vue.createApp({
       const data = snapshot.val()
       this.users = data
       const  arr_uses = Object.keys(data).map((key) => data[key])
+      this.arr_uses = Object.keys(data).map((key) => data[key])
       this.votes = [
         {
           id: 1,
