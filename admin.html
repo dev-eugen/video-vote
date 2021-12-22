@@ -89,7 +89,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="(u, uIdx) in users" :key="uIdx" :class="u.votes[0] != 0 ? 'bg-green-50' : ''">
+                      <tr v-for="(u, uIdx) in users" :key="uIdx" :class="u.votes[0] != 0 ? 'bg-green-100' : 'bg-red-100'">
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                           {{ u.bio }}
                         </td>
