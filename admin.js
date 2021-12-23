@@ -157,6 +157,11 @@ const app = Vue.createApp({
           name: 'Львовский филиал',
           id: 12,
           votes: 0
+        },
+        {
+          name: 'Ровенский филиал',
+          id: 13,
+          votes: 0
         }
       ]
       this.votes.forEach(v => {
